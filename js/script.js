@@ -18,17 +18,16 @@ tabContainers.addEventListener('click', function (e) {
     .classList.remove('hidden');
 });
 
+let slide = 2;
+window.addEventListener('resize', function (event) {
+  let newWidth = window.innerWidth;
 
-window.addEventListener('resize', () => {
-  let width = window.innerWidth;
-  let slide = 2;
-
-  if (width <= 600) {
+  if (newWidth < 800) {
     slide = 1;
   }
 
-  var swiper = new Swiper('.mySwiper', {
-    slidesPerView: slide,
+  let swiper = new Swiper('.mySwiper', {
+    slidesPerView: slide || 2,
     spaceBetween: 40,
     loop: true,
     pagination: {
@@ -40,4 +39,18 @@ window.addEventListener('resize', () => {
       prevEl: '.swiper-button-prev',
     },
   });
+});
+
+let swiper = new Swiper('.mySwiper', {
+  slidesPerView: slide || 2,
+  spaceBetween: 40,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });

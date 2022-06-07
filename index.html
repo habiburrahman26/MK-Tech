@@ -37,7 +37,7 @@
   <body class="bg-light">
     <!-- section header -->
     <header class="lg:h-screen">
-      <div class="flex items-center justify-between px-16 pt-4">
+      <div class="flex items-center justify-between px-3 lg:px-16 pt-4">
         <p class="flex items-center gap-2 hover:cursor-pointer">
           <img
             src="https://img.icons8.com/ios-filled/50/undefined/bbb.png"
@@ -45,7 +45,7 @@
         </p>
         <a href="#"><span class="text-green-400">BN</span> / <span>EN</span></a>
       </div>
-      <nav class="flex items-center justify-between px-16 mt-2 hidden">
+      <nav class="flex items-center justify-between px-3 lg:px-16 mt-2 hidden lg:flex">
         <ul class="flex gap-8">
           <li><a class="text-orange" href="#">HOME</a></li>
           <li><a class="text-blue" href="#">ADVERTISERS</a></li>
@@ -65,7 +65,7 @@
         </div>
       </nav>
       <div
-        class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-20 py-20 px-4 lg:px-24"
+        class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-20 py-10 lg:py-20 px-4 lg:px-24"
       >
         <div>
           <h1 class="text-2xl lg:text-5xl font-semibold pb-4">
@@ -85,14 +85,14 @@
     </header>
 
     <!-- avaible for every one section -->
-    <section class="py-24 hidden">
+    <section class="py-24">
       <div>
-        <h2 class="text-center uppercase text-blue text-2xl lg:text-3xl">
+        <h2 class="text-center uppercase text-blue text-xl lg:text-3xl">
           AVAILABLE FOR EVERYONE
         </h2>
         <h3 class="text-center mt-2 text-xl">Services</h3>
 
-        <div class="w-[320px] lg:w-[900px] mx-auto pt-12 flex justify-around px-3">
+        <div class="w-[320px] lg:w-[900px] mx-auto pt-12 flex flex-col lg:flex-row gap-10 lg:gap-0 justify-around px-3">
           <div class="flex flex-col items-center">
             <p
               class="w-24 h-24 px-8 py-8 rounded-full bg-white flex justify-center items-center"
@@ -100,7 +100,7 @@
               <i class="fa fa-bullhorn text-3xl text-blue"></i>
             </p>
             <p class="pt-4">Text 1</p>
-            <button class="mt-8 px-24 py-1 rounded-full bg-blue text-light">
+            <button class="mt-2 lg:mt-8 px-24 py-1 rounded-full bg-blue text-light">
               Text 1
             </button>
           </div>
@@ -111,7 +111,7 @@
               <i class="fa fa-paper-plane text-3xl text-blue"></i>
             </p>
             <p class="pt-4">Text 2</p>
-            <button class="mt-8 px-24 py-1 rounded-full bg-blue text-light">
+            <button class="mt-2 lg:mt-8 px-24 py-1 rounded-full bg-blue text-light">
               Text 2
             </button>
           </div>
@@ -122,7 +122,7 @@
               <i class="fa fa-user text-3xl text-blue"></i>
             </p>
             <p class="pt-4">Text 2</p>
-            <button class="mt-8 px-24 py-1 rounded-full bg-blue text-light">
+            <button class="mt-2 lg:mt-8 px-24 py-1 rounded-full bg-blue text-light">
               Text 2
             </button>
           </div>
@@ -131,12 +131,12 @@
     </section>
 
     <!-- section versatile ad -->
-    <section class="py-24 pt-10 hidden">
-      <h1 class="text-center uppercase text-blue text-2xl lg:text-3xl">
+    <section class="py-24 pt-10">
+      <h1 class="text-center uppercase text-blue text-xl lg:text-3xl">
         VERSATILE AD FORMATS
       </h1>
-      <div class="w-[320px] lg:w-[1000px] mx-auto pt-10 px-3">
-        <div class="flex justify-around tab-containers">
+      <div class="w-[320px] md:w-[700px] lg:w-[1000px] mx-auto pt-10 px-3">
+        <div class="flex flex-col gap-5 lg:gap-0 md:flex-row  justify-around tab-containers">
           <button
             class="uppercase px-14 rounded-full py-1 shadow shadow-gray-400 versatile__tab--1 bg-orange text-light versatile-tab"
             data-tab="1"
@@ -178,7 +178,7 @@
               hampered much.
             </p>
             <a
-              class="flex items-center gap-2 text-blue absolute bottom-0"
+              class="flex items-center gap-2 text-blue absolute -bottom-10 lg:bottom-0"
               href="#"
               ><span>Learn more</span>
               <span
@@ -207,7 +207,7 @@
           </div>
           <div class="relative">
             <h3
-              class="text-orange font-semibold text-xl lg:text-xl mb-4 uppercase font-semibold"
+              class="text-orange font-semibold text-xl lg:text-xl mb-4 uppercase"
             >
               banner ad
             </h3>
@@ -216,7 +216,7 @@
               for visibility.
             </p>
             <a
-              class="flex items-center gap-2 text-blue absolute bottom-0"
+              class="flex items-center gap-2 text-blue absolute -bottom-10 lg:bottom-0"
               href="#"
               ><span>Learn more</span>
               <span
@@ -245,7 +245,7 @@
           </div>
           <div class="relative">
             <h3
-              class="text-orange font-semibold text-xl lg:text-xl mb-4 uppercase font-semibold"
+              class="text-orange font-semibold text-xl lg:text-xl mb-4 uppercase"
             >
               native
             </h3>
@@ -256,7 +256,7 @@
               the level of interaction.
             </p>
             <a
-              class="flex items-center gap-2 text-blue absolute bottom-0"
+              class="flex items-center gap-2 text-blue absolute -bottom-10 lg:bottom-0"
               href="#"
               ><span>Learn more</span>
               <span
@@ -285,7 +285,7 @@
           </div>
           <div class="relative">
             <h3
-              class="text-orange font-semibold text-xl lg:text-xl mb-4 uppercase font-semibold"
+              class="text-orange font-semibold text-xl lg:text-xl mb-4 uppercase"
             >
               skim
             </h3>
@@ -296,7 +296,7 @@
               CR to advertisers and CPM rates to publishers.
             </p>
             <a
-              class="flex items-center gap-2 text-blue absolute bottom-0"
+              class="flex items-center gap-2 text-blue absolute -bottom-10 lg:bottom-0"
               href="#"
               ><span>Learn more</span>
               <span
@@ -322,9 +322,9 @@
 
     <!-- another section -->
 
-    <section class="bg-blue lg:px-36 pt-5 mb-24">
+    <section class="bg-blue lg:px-36 pt-5 mb-20">
       <h1 class="text-xl lg:text-3xl text-center text-white">Title 1</h1>
-      <div class="flex flex-col gap-24 items-center justify-around py-16">
+      <div class="flex flex-col md:flex-row gap-24 items-center justify-around py-16">
         <div
           class="w-40 h-40 lg:w-56 lg:h-56 rounded-full border-dotted border-2 flex justify-center items-center flex-col gap-4 text-white"
         >
@@ -347,11 +347,11 @@
     </section>
 
     <!-- section  -->
-    <section class="pt-6 pb-24 hidden">
+    <section class="pt-6 pb-24">
       <h2 class="text-xl lg:text-3xl text-center text-blue pb-8">
         Happy client's says
       </h2>
-      <div class="swiper mySwiper pt-10 pb-16">
+      <div class="swiper mySwiper pt-3 lg:pt-10 pb-4 lg:pb-16">
         <div class="swiper-wrapper pb-10">
           <div class="swiper-slide px-3 py-3 mb-3 rounded-md">
             <div class="flex gap-8 border border-orange rounded-md shadow-lg py-4 px-4">
@@ -369,7 +369,6 @@
           <div class="swiper-slide px-3 py-3 rounded-md">
             <div class="flex gap-8 border border-orange rounded-md shadow-lg py-4 px-4">
               <img src="images/57.jpg" alt="" />
-
               <div class="text-blue">
                 <h3 class="text-left mb-6">Title 2</h3>
                 <p class="text-left">
@@ -412,9 +411,8 @@
       </div>
     </section>
 
-    <p id="width"></p>
     <!-- footer -->
-    <footer class="lg:px-24 hidden">
+    <footer class="lg:px-24">
       <div class="grid grid-cols-1 lg:grid-cols-4 pb-16 px-8">
         <div class="mb-6 lg:mb-0">
           <p class="mb-4 text-blue">We are social</p>
@@ -449,7 +447,7 @@
             <p class="uppercase font-semibold">INFLUENCERS</p>
             <p class="uppercase font-semibold">AD FORMATS</p>
           </div>
-          <div class="flex flex-col gap-4 -mb-6 lg:-mb-0">
+          <div class="flex flex-col gap-4 -mb-10 lg:-mb-0">
             <p class="mb-2 text-blue">Documentation</p>
             <p class="uppercase font-semibold">TERMS & CONDITIONS</p>
             <p class="uppercase font-semibold">PRIVACY POLICY</p>
