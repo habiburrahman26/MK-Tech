@@ -36,7 +36,7 @@
   </head>
   <body class="bg-light">
     <!-- section header -->
-    <header class="h-screen">
+    <header class="lg:h-screen">
       <div class="flex items-center justify-between px-16 pt-4">
         <p class="flex items-center gap-2 hover:cursor-pointer">
           <img
@@ -45,8 +45,8 @@
         </p>
         <a href="#"><span class="text-green-400">BN</span> / <span>EN</span></a>
       </div>
-      <nav class="flex items-center justify-between px-16 mt-2">
-        <ul class="flex gap-8 hidden">
+      <nav class="flex items-center justify-between px-16 mt-2 hidden">
+        <ul class="flex gap-8">
           <li><a class="text-orange" href="#">HOME</a></li>
           <li><a class="text-blue" href="#">ADVERTISERS</a></li>
           <li><a class="text-blue" href="#">PUBLISHERS</a></li>
@@ -65,10 +65,10 @@
         </div>
       </nav>
       <div
-        class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-20 py-20 px-24"
+        class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-20 py-20 px-4 lg:px-24"
       >
         <div>
-          <h1 class="text-3xl lg:text-5xl font-semibold pb-4">
+          <h1 class="text-2xl lg:text-5xl font-semibold pb-4">
             We are here to serve you the world's best Arts design
           </h1>
           <p>
@@ -324,21 +324,21 @@
 
     <section class="bg-blue lg:px-36 pt-5 mb-24">
       <h1 class="text-xl lg:text-3xl text-center text-white">Title 1</h1>
-      <div class="flex gap-24 items-center justify-around py-16">
+      <div class="flex flex-col gap-24 items-center justify-around py-16">
         <div
-          class="w-56 h-56 rounded-full border-dotted border-2 flex justify-center items-center flex-col gap-4 text-white"
+          class="w-40 h-40 lg:w-56 lg:h-56 rounded-full border-dotted border-2 flex justify-center items-center flex-col gap-4 text-white"
         >
           <p class="text-xl lg:text-3xl font-semibold">1 BN+</p>
           <p>Daily Impressions</p>
         </div>
         <div
-          class="w-56 h-56 rounded-full flex justify-center items-center flex-col gap-4 bg-white text-blue"
+          class="w-40 h-40 lg:w-56 lg:h-56 rounded-full flex justify-center items-center flex-col gap-4 bg-white text-blue"
         >
           <p class="text-xl lg:text-3xl font-semibold">$500K+</p>
           <p>paid</p>
         </div>
         <div
-          class="w-56 h-56 rounded-full bg-orange flex justify-center items-center flex-col gap-4 text-white"
+          class="w-40 h-40 lg:w-56 lg:h-56 rounded-full bg-orange flex justify-center items-center flex-col gap-4 text-white"
         >
           <p class="text-xl lg:text-3xl font-semibold">8K+</p>
           <p>Global Publishers</p>
@@ -347,7 +347,7 @@
     </section>
 
     <!-- section  -->
-    <section class="pt-6 pb-24">
+    <section class="pt-6 pb-24 hidden">
       <h2 class="text-xl lg:text-3xl text-center text-blue pb-8">
         Happy client's says
       </h2>
@@ -414,7 +414,7 @@
 
     <p id="width"></p>
     <!-- footer -->
-    <footer class="lg:px-24">
+    <footer class="lg:px-24 hidden">
       <div class="grid grid-cols-1 lg:grid-cols-4 pb-16 px-8">
         <div class="mb-6 lg:mb-0">
           <p class="mb-4 text-blue">We are social</p>
