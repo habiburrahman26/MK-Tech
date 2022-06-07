@@ -23,11 +23,16 @@
         },
       };
     </script>
+    <script
+      src="https://kit.fontawesome.com/63e3820ce0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
     <title>ArtWork</title>
   </head>
-  <body>
+  <body class="bg-light">
     <!-- section header -->
-    <section class="bg-light h-screen">
+    <header class="h-screen">
       <div class="flex justify-between px-16 pt-4">
         <h1>Logo</h1>
         <a href="#"><span class="text-green-400">BN</span> / <span>EN</span></a>
@@ -42,8 +47,8 @@
           <li><a class="text-blue" href="#">BLOG</a></li>
           <li><a class="text-blue" href="#">CONTACT US</a></li>
         </ul>
-        <div class="flex gap-4 bg-white px-6 py-2 rounded-full shadow">
-          <button class="uppercase">Login</button>
+        <div class="flex gap-4 bg-white px-3 py-2 rounded-full shadow">
+          <button class="uppercase pl-2">Login</button>
           <button
             class="uppercase font-semibold px-5 text-white py-1 bg-orange rounded-full"
           >
@@ -51,17 +56,70 @@
           </button>
         </div>
       </nav>
-      <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center  gap-20 py-24 px-24">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-20 py-28 px-24"
+      >
         <div>
-          <h1 class="text-2xl lg:text-5xl font-semibold pb-4">Here Is A title</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo modi optio facere voluptatibus cum. Quod nostrum alias quos in tenetur repellat fugit quas nobis non, est perspiciatis sint rerum culpa?</p>
+          <h1 class="text-3xl lg:text-5xl font-semibold pb-4">
+            Here Is A title
+          </h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
+            modi optio facere voluptatibus cum. Quod nostrum alias quos in
+            tenetur repellat fugit quas nobis non, est perspiciatis sint rerum
+            culpa?
+          </p>
         </div>
         <div>
-          <img src="images/banner.jpg" alt="banner photo" class="w-[300px]" />
+          <img src="images/banner.jpg" alt="banner photo" class="w-[400px]" />
+        </div>
+      </div>
+    </header>
+
+    <!-- avaible for every one section -->
+    <section class="py-24">
+      <div>
+        <h2 class="text-center uppercase text-blue text-2xl lg:text-3xl">
+          AVAILABLE FOR EVERYONE
+        </h2>
+        <h3 class="text-center mt-2 text-xl">Services</h3>
+
+        <div class="w-[900px] mx-auto pt-12 flex justify-around">
+          <div class="flex flex-col items-center">
+            <p
+              class="w-24 h-24 px-8 py-8 rounded-full bg-white flex justify-center items-center"
+            >
+              <i class="fa fa-bullhorn text-3xl text-blue"></i>
+            </p>
+            <p class="pt-4">Text 1</p>
+            <button class="mt-8 px-24 py-1 rounded-full bg-blue text-light">
+              Text 1
+            </button>
+          </div>
+          <div class="flex flex-col items-center">
+            <p
+              class="w-24 h-24 px-8 py-8 rounded-full bg-white flex justify-center items-center"
+            >
+              <i class="fa fa-paper-plane text-3xl text-blue"></i>
+            </p>
+            <p class="pt-4">Text 2</p>
+            <button class="mt-8 px-24 py-1 rounded-full bg-blue text-light">
+              Text 2
+            </button>
+          </div>
+          <div class="flex flex-col items-center">
+            <p
+              class="w-24 h-24 px-8 py-8 rounded-full bg-white flex justify-center items-center"
+            >
+            <i class="fa fa-user text-3xl text-blue"></i>
+            </p>
+            <p class="pt-4">Text 2</p>
+            <button class="mt-8 px-24 py-1 rounded-full bg-blue text-light">
+              Text 2
+            </button>
+          </div>
         </div>
       </div>
     </section>
-
-    <!-- avaible for every one section -->
   </body>
 </html>
