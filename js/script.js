@@ -18,16 +18,26 @@ tabContainers.addEventListener('click', function (e) {
     .classList.remove('hidden');
 });
 
-var swiper = new Swiper('.mySwiper', {
-  slidesPerView: 2,
-  spaceBetween: 40,
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+
+window.addEventListener('resize', () => {
+  let width = window.innerWidth;
+  let slide = 2;
+
+  if (width <= 600) {
+    slide = 1;
+  }
+
+  var swiper = new Swiper('.mySwiper', {
+    slidesPerView: slide,
+    spaceBetween: 40,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 });

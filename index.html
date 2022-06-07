@@ -46,7 +46,7 @@
         <a href="#"><span class="text-green-400">BN</span> / <span>EN</span></a>
       </div>
       <nav class="flex items-center justify-between px-16 mt-2">
-        <ul class="flex gap-8">
+        <ul class="flex gap-8 hidden">
           <li><a class="text-orange" href="#">HOME</a></li>
           <li><a class="text-blue" href="#">ADVERTISERS</a></li>
           <li><a class="text-blue" href="#">PUBLISHERS</a></li>
@@ -79,20 +79,20 @@
           </p>
         </div>
         <div>
-          <img src="images/banner.jpg" alt="banner photo" class="w-[400px]" />
+          <img src="images/banner.jpg" alt="banner photo" class="w-[300px] lg:w-[400px]" />
         </div>
       </div>
     </header>
 
     <!-- avaible for every one section -->
-    <section class="py-24">
+    <section class="py-24 hidden">
       <div>
         <h2 class="text-center uppercase text-blue text-2xl lg:text-3xl">
           AVAILABLE FOR EVERYONE
         </h2>
         <h3 class="text-center mt-2 text-xl">Services</h3>
 
-        <div class="w-[900px] mx-auto pt-12 flex justify-around">
+        <div class="w-[320px] lg:w-[900px] mx-auto pt-12 flex justify-around px-3">
           <div class="flex flex-col items-center">
             <p
               class="w-24 h-24 px-8 py-8 rounded-full bg-white flex justify-center items-center"
@@ -131,11 +131,11 @@
     </section>
 
     <!-- section versatile ad -->
-    <section class="py-24 pt-10">
+    <section class="py-24 pt-10 hidden">
       <h1 class="text-center uppercase text-blue text-2xl lg:text-3xl">
         VERSATILE AD FORMATS
       </h1>
-      <div class="w-[1000px] mx-auto pt-10">
+      <div class="w-[320px] lg:w-[1000px] mx-auto pt-10 px-3">
         <div class="flex justify-around tab-containers">
           <button
             class="uppercase px-14 rounded-full py-1 shadow shadow-gray-400 versatile__tab--1 bg-orange text-light versatile-tab"
@@ -411,10 +411,12 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+
+    <p id="width"></p>
     <!-- footer -->
     <footer class="lg:px-24">
-      <div class="grid grid-cols-1 lg:grid-cols-4 pb-16">
-        <div>
+      <div class="grid grid-cols-1 lg:grid-cols-4 pb-16 px-8">
+        <div class="mb-6 lg:mb-0">
           <p class="mb-4 text-blue">We are social</p>
           <p class="uppercase mb-4">Follow us</p>
           <div class="flex gap-2">
@@ -438,7 +440,7 @@
           </p>
         </div>
         <div
-          class="grid grid-cols-1 lg:grid-cols-3 col-start-2 col-end-5 gap-24"
+          class="grid grid-cols-1 lg:grid-cols-3 lg:col-start-2 lg:col-end-5 gap-24 mb-4 lg:mb-0"
         >
           <div class="flex flex-col gap-4">
             <p class="mb-2 text-blue">Links</p>
@@ -447,14 +449,14 @@
             <p class="uppercase font-semibold">INFLUENCERS</p>
             <p class="uppercase font-semibold">AD FORMATS</p>
           </div>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4 -mb-6 lg:-mb-0">
             <p class="mb-2 text-blue">Documentation</p>
             <p class="uppercase font-semibold">TERMS & CONDITIONS</p>
             <p class="uppercase font-semibold">PRIVACY POLICY</p>
             <p class="uppercase font-semibold">CANCELLATION POLICY</p>
             <p class="uppercase font-semibold">BLOG</p>
           </div>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4 -mb-6 lg:-mb-0">
             <p class="mb-2 text-blue">Support</p>
             <p class="uppercase font-semibold">Faq</p>
             <p class="uppercase font-semibold">PUBLISHERS</p>
