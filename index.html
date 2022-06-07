@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              bebas: ['Bebas Neue', 'cursive'],
+              montserrat: ['Montserrat', 'sans-serif'],
+            },
+            colors: {
+              orange: '#FF6F00',
+              blue: '#644F9C',
+              light: '#F2F2F2',
+              colorBlack: '#404040',
+            },
+          },
+        },
+      };
+    </script>
+    <title>ArtWork</title>
+  </head>
+  <body>
+    <!-- section header -->
+    <section class="bg-light h-screen">
+      <div class="flex justify-between px-16 pt-4">
+        <h1>Logo</h1>
+        <a href="#">BN / EN</a>
+      </div>
+      <nav class="flex items-center justify-between px-8 mt-6">
+        <ul class="flex gap-8">
+          <li><a class="text-orange" href="#">HOME</a></li>
+          <li><a class="text-blue" href="#">ADVERTISERS</a></li>
+          <li><a class="text-blue" href="#">PUBLISHERS</a></li>
+          <li><a class="text-blue" href="#">INFLUENCERS</a></li>
+          <li><a class="text-blue" href="#">AD FORMATS</a></li>
+          <li><a class="text-blue" href="#">BLOG</a></li>
+          <li><a class="text-blue" href="#">CONTACT US</a></li>
+        </ul>
+        <div class="flex gap-4 bg-white px-6 py-2 rounded-full shadow">
+          <button class="uppercase">Login</button>
+          <button
+            class="uppercase font-semibold px-5 text-white py-1 bg-orange rounded-full"
+          >
+            Sign up
+          </button>
+        </div>
+      </nav>
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center  gap-20 pt-20 px-24 bg-red-100">
+        <div class="">
+          <h1></h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo modi optio facere voluptatibus cum. Quod nostrum alias quos in tenetur repellat fugit quas nobis non, est perspiciatis sint rerum culpa?</p>
+        </div>
+        <div class="">
+          <img src="images/banner.jpg" alt="banner photo" class="w-[300px]" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
