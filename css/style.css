@@ -1,3 +1,9 @@
 .icon {
   fill: #644f9c;
 }
+
+.btn-active {
+  background-color: #ff6f00;
+  color: #f2f2f2;
+}
+
