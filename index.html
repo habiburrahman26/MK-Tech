@@ -27,17 +27,25 @@
       src="https://kit.fontawesome.com/63e3820ce0.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <title>ArtWork</title>
+    <title>Art care</title>
   </head>
   <body class="bg-light">
     <!-- section header -->
     <header class="h-screen">
-      <div class="flex justify-between px-16 pt-4">
-        <h1>Logo</h1>
+      <div class="flex items-center justify-between px-16 pt-4">
+        <p class="flex items-center gap-2 hover:cursor-pointer">
+          <img
+            src="https://img.icons8.com/ios-filled/50/undefined/bbb.png"
+          /><span class="font-semibold text-xl">Art-care</span>
+        </p>
         <a href="#"><span class="text-green-400">BN</span> / <span>EN</span></a>
       </div>
-      <nav class="flex items-center justify-between px-16 mt-6">
+      <nav class="flex items-center justify-between px-16 mt-2">
         <ul class="flex gap-8">
           <li><a class="text-orange" href="#">HOME</a></li>
           <li><a class="text-blue" href="#">ADVERTISERS</a></li>
@@ -57,11 +65,11 @@
         </div>
       </nav>
       <div
-        class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-20 py-28 px-24"
+        class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-20 py-20 px-24"
       >
         <div>
           <h1 class="text-3xl lg:text-5xl font-semibold pb-4">
-            Here Is A title
+            We are here to serve you the world's best Arts design
           </h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
@@ -338,6 +346,71 @@
       </div>
     </section>
 
+    <!-- section  -->
+    <section class="pt-6 pb-24">
+      <h2 class="text-xl lg:text-3xl text-center text-blue pb-8">
+        Happy client's says
+      </h2>
+      <div class="swiper mySwiper pt-10 pb-16">
+        <div class="swiper-wrapper pb-10">
+          <div class="swiper-slide px-3 py-3 mb-3 rounded-md">
+            <div class="flex gap-8 border border-orange rounded-md shadow-lg py-4 px-4">
+              <img src="images/31.jpg" alt="" />
+
+              <div class="text-blue">
+                <h3 class="text-left mb-6">Title 1</h3>
+                <p class="text-left">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
+                  iusto tempora deleniti, exercitationem asperiores obcaecati.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide px-3 py-3 rounded-md">
+            <div class="flex gap-8 border border-orange rounded-md shadow-lg py-4 px-4">
+              <img src="images/57.jpg" alt="" />
+
+              <div class="text-blue">
+                <h3 class="text-left mb-6">Title 2</h3>
+                <p class="text-left">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
+                  iusto tempora deleniti, exercitationem asperiores obcaecati.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide px-3 py-3 rounded-md">
+            <div class="flex gap-8 border border-orange rounded-md shadow-lg py-4 px-4">
+              <img src="images/65.jpg" alt="" />
+
+              <div class="text-blue">
+                <h3 class="text-left mb-6">Title 3</h3>
+                <p class="text-left">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
+                  iusto tempora deleniti, exercitationem asperiores obcaecati.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide px-3 py-3 rounded-md">
+            <div class="flex gap-8 border border-orange rounded-md shadow-lg py-4 px-4">
+              <img src="images/9.jpg" alt="" />
+
+              <div class="text-blue">
+                <h3 class="text-left mb-6">Title 4</h3>
+                <p class="text-left">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
+                  iusto tempora deleniti, exercitationem asperiores obcaecati.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
     <!-- footer -->
     <footer class="lg:px-24">
       <div class="grid grid-cols-1 lg:grid-cols-4 pb-16">
@@ -358,9 +431,15 @@
               class="w-8 h-8"
             />
           </div>
-          <h1 class="pt-6">Logo</h1>
+          <p class="pt-6 flex items-center gap-2">
+            <img
+              src="https://img.icons8.com/ios-filled/50/undefined/bbb.png"
+            /><span class="font-semibold">Art-care</span>
+          </p>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 col-start-2 col-end-5 gap-24">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 col-start-2 col-end-5 gap-24"
+        >
           <div class="flex flex-col gap-4">
             <p class="mb-2 text-blue">Links</p>
             <p class="uppercase font-semibold">ADVERTISERS</p>
@@ -385,6 +464,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

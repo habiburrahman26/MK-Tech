@@ -17,3 +17,17 @@ tabContainers.addEventListener('click', function (e) {
     .querySelector(`.tab-content--${clicked.dataset.tab}`)
     .classList.remove('hidden');
 });
+
+var swiper = new Swiper('.mySwiper', {
+  slidesPerView: 2,
+  spaceBetween: 40,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
